@@ -1,0 +1,55 @@
+spring:
+  config:
+    activate:
+      on-profile: dev,test
+
+---
+
+spring:
+  profiles: dev
+
+company:
+  name: Dev Company
+  type: Development
+  location: Dev City
+  members:
+    - Alice
+    - Bob
+    - Charlie
+  phoneNumbers:
+    dev1: 123-456-7890
+    dev2: 987-654-3210
+
+---
+
+spring:
+  profiles: test
+
+company:
+  name: Test Company
+  type: Testing
+  location: Test City
+  members:
+    - David
+    - Eve
+    - Frank
+  phoneNumbers:
+    test1: 111-222-3333
+    test2: 444-555-6666
+
+---
+
+spring:
+  profiles: prod
+
+company:
+  name: Prod Company
+  type: Production
+  location: Prod City
+  members:
+    - Grace
+    - Hank
+    - Ian
+  phoneNumbers:
+    prod1: 999-888-7777
+    prod2: 666-555-4444
